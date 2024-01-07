@@ -27,3 +27,13 @@ Modules Used
 FrontEnd
 
 -> React Js
+
+-> HTML
+
+-> CSS
+
+-> TailWind Css
+
+Stripe -> Payment Gateway
+
+FIrebase -> OTP Mobile Service 
