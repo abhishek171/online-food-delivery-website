@@ -1,0 +1,94 @@
+.dynamic-tabs {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    padding: 25px;
+  }
+
+  .accordion {
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .accordion-header {
+    background-color:rgb(201, 25, 25);
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .accordion-header.open {
+    background-color: white;
+    
+  }
+  .accordion-content {
+    padding: 10px 0;
+    background-color:white;
+    color: black;
+  }
+
+  .dash{
+    padding-left: 9px;
+    color: rgb(201, 25, 25);
+  }
+  
+  .outer:hover{
+    width: 100%;
+    background-color: red;
+    color: white!important;
+  }
+
+  .outer:hover .dash{
+    color: white!important;
+  }
+  
+ .selected {
+    width: 100%;
+    background-color: red;
+    color: white;
+  }
+
+  .down{
+    transition: all 0.2s linear;
+    transform: rotate(180deg);
+   
+  }
+  .up{
+    transition: all 0.2s linear;
+    transform: rotate(0deg);
+  }
+
+  .scalestart{
+   animation-name: scaleanimstart;
+   animation-duration: 0.2s;
+   animation-timing-function: linear;
+  }
+  @keyframes scaleanimstart{
+    0%{
+      transform-origin: top;
+      transform: scaleY(0);
+    }
+    100%{
+      transform-origin: top;
+      transform: scaleY(1);
+    }
+  }
+  .scaleend{
+   animation-name: scaleanimend;
+   animation-duration: 0.2s;
+   animation-timing-function: linear;
+  }
+  @keyframes scaleanimend{
+    0%{
+      transform-origin: top;
+      transform: scaleY(1);
+    }
+    100%{
+      transform-origin: top;
+      transform: scaleY(0);
+    }
+  }

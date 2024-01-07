@@ -1,0 +1,27 @@
+
+.dynamicPagination{
+    position: relative;
+}
+
+.paginationContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.dynamicPagination button{
+    padding: 12px 24px;
+    background-color: white;
+    color: #FC9019;
+    border:1px solid lightgrey;
+    font-size: 18px;
+    font-weight: 700;
+}
+.dynamicPagination .active{
+    background-color: #FC9019;
+    color: white;
+}   
+.dynamicPagination .inactive:hover{
+    background-color: rgb(228, 222, 222);
+}

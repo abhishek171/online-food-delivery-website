@@ -1,0 +1,54 @@
+.beforeAfter{
+    position: relative;
+    text-align: center;
+    color: grey;
+}
+.beforeAfter::after{
+    background-color: #eee;
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 13px;
+    width: 6.25rem;
+    right: 4.25rem;
+}
+
+.beforeAfter::before{
+    background-color: #eee;
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 13px;
+    width: 6.25rem;
+    left: 4.25rem;;
+}
+
+.admin-form label{
+    font-size: 16px;
+}
+.admin-form input{
+    height:45px;
+    width:100%;
+    text-align: left;
+    padding: 10px 45px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+.admin-form input:focus{
+    outline: none;
+}
+.admin-form button{
+    margin-left: 0%;
+    margin-top: 15%;
+    width: 100%;
+}
+#signup{
+    margin-left: 40%;
+    margin-top: 5%;
+    width: 20%;
+}
+
+.hotel button{
+    width: 100%!important;
+    margin-left: 0;
+}

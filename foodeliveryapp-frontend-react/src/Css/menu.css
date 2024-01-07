@@ -1,0 +1,182 @@
+
+.menuSearch {
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .menuSearch input {
+    padding: 0 150px;
+    outline: none;
+    padding-left: 15px;
+  }
+  
+  .menuSearch input:focus {
+    border: none;
+    outline: none;
+  }
+  .menuSearch button {
+    background-color: rgb(38, 36, 36);
+    position: absolute;
+    top:0;
+    right: 0;
+    border: none;
+    outline: none;
+    color: white;
+    height: 105%;
+    padding: 0 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .menuPage:hover{
+    color: rgb(218, 21, 21);
+  }
+
+  .menuLogo:hover{
+    transform: scale(1.1);
+    transform-origin: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+
+  .slick-slide{
+    margin-right: 20px!important;
+  }
+.slick-track{
+  height: 120px;
+  z-index: 1;
+}
+  .slick-prev{
+    left:-33px!important;
+  }
+  .slick-next{
+    right:-18px!important;
+  }
+  .slick-next,.slick-prev{
+    top:35%!important;
+  }
+  .slick-next:before, .slick-prev:before {
+    color:red;
+    font-size: 35px;
+  }
+  .center{
+    cursor: pointer;
+  }
+  .mainCard{
+    width: 200px;
+    height: 180px;
+  }
+  .foodCard{
+    width:100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+  }
+  .mainCard p{
+    font-size: 20px;
+    color: rgb(83, 82, 82);
+    font-weight: 700;
+  }
+  .foodItemImage{
+    height: 180px;
+    width: 250px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow:0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  .outerBox{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .menuCards:hover{
+    transform: scale(0.95);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+
+  .seeMoreButton{
+    position: fixed;
+    bottom:50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  @keyframes scale-animStart {
+    0%{
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+    100%{
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+  }
+  .scaleAnimStart{
+    animation-name: scale-animStart;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+  }
+
+  @keyframes scale-animEnd {
+    0%{
+      transform: scaleY(1);
+      transform-origin: bottom;
+    }
+    100%{
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+  }
+
+  .scaleAnimEnd{
+    animation-name: scale-animEnd;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+  }
+
+  .menu_OrderCart {
+    display: none;
+    position: fixed;
+    top: 4.5%; 
+    padding: 10px;
+    background-color:white;
+    z-index: 5000;
+    border-top: 2px solid red;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu_OrderCart::before {
+    content: "";
+    position: fixed;
+    top: 4.2%;
+    right: 4%;
+    margin-top: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent transparent;
+    outline: 8px;
+    background-color: transparent;
+    border-color: transparent transparent red transparent;
+    transform: translateX(-70%);
+}

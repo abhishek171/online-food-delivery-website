@@ -1,0 +1,131 @@
+.menuSearchBar {
+    height: 50px;
+    border: 1px solid lightgrey;
+    border-right: none;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .menuSearchBar input {
+    margin-top: 15px;
+    padding: 0 100px;
+    border:none;
+    outline: none;
+    padding-left: 15px;
+  }
+  
+  .menuSearchBar input:focus {
+    border: none;
+    outline: none;
+  }
+  .menuSearchBar .fa-microphone{
+    position: absolute;
+    top:12px;
+    right:60px;
+    font-size: 25px;
+    cursor:pointer;
+  }
+  .menuSearchBar button {
+    background-color: rgb(38, 36, 36);
+    position: absolute;
+    top:0;
+    right: 0;
+    border: none;
+    outline: none;
+    color: white;
+    height: 102%;
+    padding: 0 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .menuPage:hover{
+    color: rgb(218, 21, 21);
+  }
+
+  .menuLogo:hover{
+    transform: scale(1.1);
+    transform-origin: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+
+@keyframes translate-animStart {
+    0% {
+        transform: translateX(0%);
+        transform-origin: left;
+    }
+    100% {
+        transform: translateX(160%);
+        transform-origin: left;
+    }
+}
+
+.animStart {
+    animation-name: translate-animStart;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes translate-animEnd {
+    0% {
+        transform: translateX(160%);
+        transform-origin: right;
+    }
+    100% {
+        transform: translateX(0%);
+        transform-origin: right;
+    }
+}
+
+.animEnd {
+    animation-name: translate-animEnd;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.menu_Order_Cart {
+    display: none;
+    position: fixed;
+    top: 2%; 
+    padding: 10px;
+    background-color:white;
+    z-index: 5000;
+    border-top: 2px solid red;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu_Order_Cart::before {
+    content: "";
+    position: fixed;
+    top: 1.8%;
+    right: 4%;
+    margin-top: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent transparent;
+    outline: 8px;
+    background-color: transparent;
+    border-color: transparent transparent red transparent;
+    transform: translateX(-70%);
+}
+
+.checkout:hover{
+  transform: scale(0.9);
+  transform-origin: center;
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+}
+
+.addToCart:hover{
+   background-color: rgb(61, 222, 61);
+   color: white;
+}
+
+.removeFromCart:hover{
+  background-color: red;
+  color: white;
+}

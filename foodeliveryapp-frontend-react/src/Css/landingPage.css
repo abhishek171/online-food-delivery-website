@@ -1,0 +1,153 @@
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s ease-in, transform 0.8s ease-in;
+  }
+  
+  .hide {
+    opacity: 0;
+    transform: translateY(35%);
+    transition: opacity 0.4s ease-out, transform 0.8s ease-out;
+  }
+
+.container-fluid{
+  position: relative;
+}
+h1{
+  font-size: 45px;
+  color: rgb(46, 43, 43);
+  font-weight: 600;
+  position: absolute;
+  top:30%;
+  left: 6%;
+}
+
+#inputText{
+  position: absolute;
+  top:54%;
+  left: 6%;
+  width: 39%;
+  background-color: transparent;
+  border: 1px solid grey; 
+  padding: 20.5px 10px;
+  outline: none;
+}
+
+::placeholder{
+  font-size: 22px;
+  color: black!important;
+  font-weight: 600;
+}
+
+#inputText:focus{
+  border-color: rgb(218, 21, 21);
+}
+#locate{
+  position: absolute;
+  top:56%;
+  left:34%;
+  padding: 10px;
+}
+
+ #locate:hover{
+  background-color: antiquewhite;
+ }
+
+ #findFood{
+  position: absolute;
+  top:54%;
+  left:44%;
+  padding: 20px 10px;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+ }
+
+ #inputEmptyAlert{
+  position: absolute;
+  top:65%;
+  left:6%;
+  width: 45.5%;
+  background-color: rgb(199, 26, 26);
+  color: white;
+  font-size: 18px;
+  padding: 20px 10px;
+ }
+
+ #para{
+  position: absolute;
+  top:82%;
+  left:6%;
+  font-size: 25px;
+  font-weight: 600;
+  color: red;
+ }
+
+ h4{
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+ }
+
+ .list-disc li{
+  padding: 10px 0;
+  font-size: 20px;
+ }
+ form{
+  border:none;
+ }
+
+ .footer{
+  background-color:black;
+  color:white ;
+  padding:0px 5%;
+ }
+ .footer ul li{
+  padding: 15px 0;
+ }
+  .info,.cusinies{
+    padding: 80px 0;
+  }
+  .footer h2{
+    padding-bottom: 20px;
+    color:grey;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .social{
+    padding: 30px 0;
+    font-size: 20px;
+  }
+
+  .userForm form input{
+    height:45px;
+    width:100%;
+    text-align: left;
+    padding: 10px 45px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;  
+  }
+
+  .userForm form button{
+    margin-left: 0%;
+    margin-top: 15%;
+    width: 100%;
+  }
+
+  .userForm form label{
+    color: rgb(201, 25, 25);
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 15px;
+  }
+
+  .mainLandPage :hover i {
+    background-color: black;
+    color:white;
+  }
+
+  .mainLandPage :hover button {
+    background-color: black;
+    color:white;
+  }
