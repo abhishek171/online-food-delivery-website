@@ -1,8 +1,10 @@
 # Online Food Delivery Application Using REST API.
 
-This project is made using spring boot(v 3.1.2)
+This project is made using spring boot(v 3.1.2) and React Js
 
 Technology Stack
+
+Backend Tech Stack
 
 -> Core Java
 
@@ -10,9 +12,27 @@ Technology Stack
 
 -> MicroServices
 
+Database
+
 -> MySql
 
-Modules Used
+FrontEnd Tech Stack
+
+-> React Js
+
+-> HTML
+
+-> CSS
+
+-> TailWind Css
+
+External Services
+
+Stripe -> Payment Gateway
+
+FIrebase -> OTP Mobile Service 
+
+Modules
 
 -> Admin Module
 
@@ -24,16 +44,4 @@ Modules Used
 
 -> Payment Module
 
-FrontEnd
 
--> React Js
-
--> HTML
-
--> CSS
-
--> TailWind Css
-
-Stripe -> Payment Gateway
-
-FIrebase -> OTP Mobile Service 
