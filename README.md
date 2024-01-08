@@ -1,6 +1,6 @@
 # Online Food Delivery Application Using REST API.
 
-This project is made using spring boot(v 3.1.2) and React Js
+This is FullStack Project made using spring boot(v 3.1.2) and React Js
 
 Technology Stack
 
